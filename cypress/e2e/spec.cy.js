@@ -9,17 +9,17 @@
 // })
 
 
-    it('interactions', () => {
+    it('interactions', () => { 
         cy.visit('https://pratikkaranjit.com.np')
-        cy.get('#companyWebsite')
-          .type('Nepali Company{enter}')
+        cy.get('#companyWebsite')                        //gets the company website field 
+          .type('Nepali Company{enter}')                  //types in it
         cy.get('#fName')
           .type('Pratik{enter}')
     })
 
-    // it.only('testing hover items', () => {
+    // it.only('testing hover items', () => {       //it only is used for testing this very test and ignores any other tests mentioned above or below
     //     cy.visit('/')
     //     cy.get('[data-cy=board-item]')          //entering a particular div
-    //     .first()                              //If there are multiple divs with same name we can select the first one in this way
+    //     .first()                              //If there are multiple div with same name we can select the first one in this way
     //     .click({force:true})       //Cypress doesn't really have a hover command so we have to use force:true to test elements that only appear in hover
     // })
